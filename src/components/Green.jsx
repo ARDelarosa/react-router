@@ -1,7 +1,7 @@
 function Green() {
     return (
         <div className="green">
-            <h1>blue</h1>
+            <h1>green</h1>
         </div>
     );
 }
