@@ -5,7 +5,7 @@ body,
 body > div {
   height: 100vh;
   width: 100vw;
-  background-color: rgb(222, 184, 236);
+  background-color: rgb(226, 203, 235);
 }
 #container {
   height: 100%;
@@ -34,6 +34,16 @@ body > div {
 }
 .blue {
   background-color: #275db3;
+  color: white;
+}
+
+.green {
+  background-color: green;
+  color: white;
+}
+
+.orange {
+  background-color: orange;
   color: white;
 }
 

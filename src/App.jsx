@@ -1,9 +1,9 @@
 
-import './App.css'
-import { Routes, Route, Link } from 'react-router-dom'
-import Blue from './components/Blue'
-import Red from  './components/Red'
-import Home from './components/Home'
+import './App.css';
+import { Link } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import MainSection from './components/MainSection';
+import Footer from './components/Footer';
 
 function App() {
   
@@ -11,22 +11,14 @@ function App() {
   return (
     <>
       <div id="container">
-        <Link to="/">Home</Link>
-      <h1>Choose which two colors...</h1>
-      <div id="navbar">
-        <Link to="/blue">This is blue!</Link>
-        <Link to="/red">This is red!</Link>
-      </div>
-      <div id="main-section">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blue" element={<Blue />} />
-          <Route path="/red" element={<Red />} />
-        </Routes>
-      </div>
+       <Link to="/">Home</Link>
+      <h1>Pick a color...</h1>
+      <Navbar />
+      <MainSection />
+      <Footer />
     </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
